@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index.html</title>
 </head>
 <body>
-    123
+    <script>
+		let oper = Number(window.prompt('Введите номер оператора(1 = +; 2 = -; 3 = /; 4 = *;)'));
+		let a = window.prompt('Первое число');
+		let b = Number(window.prompt('Второе число'));
+
+		function plus(a,b){
+			return a + b;
+		}
+
+		function minus(a,b){
+			return a - b;
+
+		}
+		
+		function multiplication(a,b){
+			return a * b;
+		}
+
+		function division(a,b){
+			return a / b;
+		}
+        if(oper == 1)
+            window.document.write(plus(a,b));
+
+        else if(oper == 2)
+            window.document.write(minus(a,b));
+
+        else if(oper == 3)
+            window.document.write(division(a,b));
+
+        else(oper == 4)
+            window.document.write(multiplication(a,b));
+
+
+    </script>
 </body>
 </html>
