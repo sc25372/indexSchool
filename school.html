@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function average(){
+            let a = 1, b = 3, c = 0;
+            c = a;
+            a = b;
+            b = c;
+            return "a = " + a + " b = " + b;
+        }
+        window.document.write(average());
+
+
+
+        let a = 1, b = 3;
+        function average2(){
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            return "<br> a = " + a + " b = " + b;
+        }
+        window.document.write(average2());
+    </script>
+</body>
+</html>
