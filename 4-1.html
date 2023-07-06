@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 4.1. Объекты. Свойства и методы
+        // let str = 'JavaScript';
+        // window.document.write(str.length,'<br>',str.indexOf('S'));
+        // window.document.write(str.toLocaieUpperCase());
+
+
+
+
+        // 4.1.1. Доступ к свойствам объекта посредством оператора [] (квадратные скобки)
+        // let s = 'JavaScript';
+        // Обращаемся к свойству length строки s
+        // window.document.write(s['length']);
+
+
+
+        // 4.3. Класс Number
+
+        // isinteger (<число>) 
+        // console.log(Number.islnteger(123));
+        // console.log(Number.islnteger(1.23));
+
+        // toString ([<основание>]) 
+        // let a = 123;
+        // window.document.write(a.toString(),'<br>',a.toString(8),'<br>',a.toString(16));
+
+        // toPrecision ([<длина числа в цифрах>])
+        // let a = 123456.789123;
+        // window.document.write(a.toPrecision(7),'<br>', a.toPrecision());
+
+
+        // 4.4. Класс String
+        // toLocaieLowerCase()
+        // window.document.write('JavaScript'.toLocaieLowerCase());
+
+
+
+        // toLocaieUpperCase() 
+        // window.document.write('JavaScript'.toLocaieUpperCase());
+
+
+
+
+
+
+
+
+
+        // 4.14. Самостоятельные упражнения
+        // Возьмите страницу 2.1.html с веб-сценарием, преобразующим величины из дюймов в сантиметры. Доработайте его таким образом, чтобы в случае, если пользователь введет в дробном числе запятую вместо десятичной точки, он корректно преобразовывал бы такое число. Файл исходной страницы 2.1.html вы найдете в папке 4\!sources сопровождающего книгу электронного архива (см. приложение 3).
+        const ins = window.prompt('Величина в дюймах', 0);
+        const cents = ins * 2.54;
+        window. document. write ('<p>', cents, '</p>') ;
+
+    </script>
+</body>
+</html>
